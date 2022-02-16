@@ -15,4 +15,4 @@ RUN apt-get update && \
 
 COPY package.json .
 COPY . .
-CMD npm start
+CMD ["npm start"]`
