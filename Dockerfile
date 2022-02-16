@@ -4,6 +4,7 @@ RUN apt-get update && \
   apt-get install -y \
   neofetch \
   chromium \
+  nodejs \
   ffmpeg \
   wget \
   imagemagick \
@@ -14,4 +15,4 @@ RUN apt-get update && \
 
 COPY package.json .
 COPY . .
-CMD ["npm start"]`
+CMD npm start
